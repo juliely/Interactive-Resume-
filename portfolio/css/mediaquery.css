@@ -1,0 +1,53 @@
+
+@media screen and (max-width: 900px) {
+  .col-4 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 750px) {
+
+  .flowerimg {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about-me{
+    display: block;
+    width: 100%;
+  }
+  .col-4 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .flowerimg {
+    max-width: 100%;
+    min-width: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-me{
+    display: block;
+    width: 100%;
+  }
+
+  .photos {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  .col-4 {
+    display: block;
+    width: 100%;
+  }
+}

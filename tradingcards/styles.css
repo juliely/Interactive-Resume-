@@ -1,0 +1,75 @@
+/* add your CSS here */
+
+.content {
+  margin: 20px auto auto;
+  width: 320px;
+  border: 1.8px solid #77d0de;
+}
+
+.title {
+  text-align: center;
+  padding: 1em inherit;
+}
+.content-title {
+  color: white;
+  background-color: #77d0de;
+  font: lighter 29px "Open Sans", sans-serif;
+  border: 5px solid #77d0de;
+  display: inline-block;
+}
+
+button {
+  color: #77d0de;
+  background-color: white;
+  border: 1px solid #77d0de;
+  border-radius: 3px;
+  font-size: 24px;
+  width: 300px;
+  display: block;
+  margin: 0 auto 25px;
+  outline: none;
+  cursor: pointer;
+}
+
+button:hover {
+  color: white;
+  background-color: #77d0de;
+  transition: background-color 0.5s ease;
+}
+
+.goji-img {
+  width: 300px;
+  display: block;
+  margin: 0 auto 25px;
+  cursor: pointer;
+}
+/*h2 {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 200px;
+}*/
+/*#169fd8*/
+.caption {
+  border: 1.5px solid #77d0de;
+  margin: 10px;
+  padding: 10px;
+  color:#77d0de;
+  background-color: #fbfcff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+}
+
+.info {
+  font-style: italic;
+}
+
+.list {
+  list-style: none;
+  font-style: italic;
+}
+
+.fact-label {
+  font-weight: bold;
+  font-style: normal;
+}

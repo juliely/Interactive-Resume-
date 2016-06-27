@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Resume</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Poiret+One" rel="stylesheet">
+    <link href="http://weloveiconfonts.com/api/?family=fontawesome" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <div id="main">
+        <!-- Contacts -->
+        <div id="header" class="center-content clear-fix">
+            <div class="welcome"></div>
+            <div id="personname"></div>
+            <ul id="topContacts" class="flex-box"></ul>
+        </div>
+
+        <!-- Education -->
+
+        <div>
+            <h2 class="edu">Education</span></h2>
+            <div id="education" class="gray"></div>
+        </div>
+
+
+        <!-- projects -->
+        <div>
+            <h2 class="project">Projects</h2>
+            <div id="projects"></div>
+        </div>
+
+        <!-- Work Experience -->
+        <div style="clear: both;"></div>
+        <h2 class="woRk">Work Experience</span></h2>
+        <div id="workExperience" class="gray">
+
+        </div>
+
+        <!-- Map -->
+        <div id="mapDiv">
+            <h2 class="mappie">Where I've Lived and Worked</h2>
+        </div>
+
+        <!-- Footer sort of thing  -->
+        <div id="lets-connect" class="dark-gray">
+            <h2 class="footer center-text">Let me take your business off the ground</h2>
+            <ul id="footerContacts" class="flex-box">
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="js/jQuery.js"></script>
+    <script src="js/helper.js"></script>
+
+    <script>
+        // function initMap() {
+        //   var myLatLng = {lat: 1.352083, lng: 103.819836};
+
+        // Create a map object and specify the DOM element for display.
+        // var map = new google.maps.Map(document.getElementById('map'), {
+        //   center: myLatLng,
+        //   scrollwheel: false,
+        //   zoom: 4
+        // });
+
+        // Create a marker and set its position.
+        // var marker = new google.maps.Marker({
+        //   map: map,
+        //   position: myLatLng,
+        //   title: 'Hello World!'
+        // });
+        // }
+    </script>
+    <!-- Map js  -->
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZu1_43GXrQY7nsCV4nxyy8MopX6JJuSU&callback=initMap" async defer></script> -->
+
+
+
+    <script type="text/javascript" src="js/resumeBuilder.js"></script>
+    <script type="text/javascript" src="js/hide.js"></script>
+    <script type="text/javascript">
+        if (document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('topContacts').style.display = 'none';
+        }
+        if (document.getElementsByTagName('h1').length === 0) {
+            document.getElementById('header').style.display = 'none';
+        }
+        if (document.getElementsByClassName('work-entry').length === 0) {
+            document.getElementById('workExperience').style.display = 'none';
+        }
+        if (document.getElementsByClassName('project-entry').length === 0) {
+            document.getElementById('projects').style.display = 'none';
+        }
+        if (document.getElementsByClassName('education-entry').length === 0) {
+            document.getElementById('education').style.display = 'none';
+        }
+        if (document.getElementsByClassName('flex-item').length === 0) {
+            document.getElementById('lets-connect').style.display = 'none';
+        }
+        if (document.getElementById('map') === null) {
+            document.getElementById('mapDiv').style.display = 'none';
+        }
+    </script>
+    <!-- from http://www.mattboldt.com/demos/typed-js/ -->
+    <script type="text/javascript" src="js/typed.js"></script>
+
+</body>
+
+</html>
